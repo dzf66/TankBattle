@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1:::::x, seq t {space :::p, comp label4:::::x, space :::p}}"
+			"$verticalGroup": "par l {seq l {comp label4:::p:27:p, space :p:12:p, comp panel1:::p::p, space :::x}}"
+		} ) {
+			name: "this"
+			"title": "坦克大战(超级简易版)"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:70:p, comp btStart:::p:165:p, space :p:52:p, comp btCreate:::p:154:p, space :p:33:p}, seq l {space :p:40:p, par t {seq t {comp label3:::p:53:p, space :::p, comp textpassword:::p:305:p}, seq t {comp label2:::p:53:p, space :::p, par l {comp textname:::p:305:p, comp label1:::p:300:p}}}, space :::p, par l {comp pwWarning::::0:x, comp idWarning::::0:x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {comp label1:::p:203:p, space :p:12:p, par b {comp label2::b:p:25:p, comp textname::b:p::p, comp idWarning::b:p::p}, space :::p, par b {comp label3::b:p:25:p, comp textpassword::b:p::p, comp pwWarning::b:p::p}, space u:::p, par b {comp btStart::b:p:46:p, comp btCreate::b:p:46:p}}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "text"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu.jpg" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "用户名"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "密码 "
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textname"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textpassword"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btStart"
+					"text": "登录并开始游戏"
+					"foreground": sfield java.awt.Color blue
+					"font": new java.awt.Font( "方正舒体", 0, 18 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btCreate"
+					"foreground": sfield java.awt.Color blue
+					"text": "注册账号"
+					"font": new java.awt.Font( "方正舒体", 0, 18 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "idWarning"
+					"text": "id不能为空！"
+					"foreground": sfield java.awt.Color red
+					"visible": false
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "pwWarning"
+					"text": "密码不能为空"
+					"foreground": sfield java.awt.Color red
+					"visible": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "     这就是一个简单的射击游戏，没有关卡，没有基地，把人机坦克打完就结束了。"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 145, 70 )
+			"size": new java.awt.Dimension( 520, 410 )
+		} )
+	}
+}

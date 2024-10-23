@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			"title": "加载界面......"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {space :p:119:p, comp label1:::p:283:p, space :::p, comp label2:::p:92:p, space :0:92:x}, comp progressBar1::l::592:x, comp label4::t::0:x}, space :::p}}"
+				"$verticalGroup": "par l {seq t {comp label4:::p:349:p, space :::p, par b {comp label1::b:p:27:p, comp label2::b:p::p}, space u:::p, comp progressBar1:::p:21:p, space :p:19:p}}"
+			} ) {
+				name: "panel1"
+				"background": sfield java.awt.Color lightGray
+				add( new FormComponent( "javax.swing.JProgressBar" ) {
+					name: "progressBar1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "正在加载游戏，请耐心等候！"
+					"foreground": sfield java.awt.Color red
+					"font": new java.awt.Font( "方正舒体", 0, 20 )
+					"background": sfield java.awt.Color lightGray
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "塔塔开！"
+					"font": new java.awt.Font( "华文隶书", 0, 20 )
+					"foreground": sfield java.awt.Color red
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "text"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/freedom.jpg" )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 600, 465 )
+		} )
+		add( new FormComponent( "javax.swing.JLabel" ) {
+			name: "label3"
+			"text": "text"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 70 )
+			"size": new java.awt.Dimension( 600, 17 )
+		} )
+	}
+}
